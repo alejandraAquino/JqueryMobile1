@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html manifest="" lang="en-US">
+<head>
+<title>SenchaTouch</title>
+<style type="text/css">
+
+html,body{
+	height: 100%;
+	background-color: #1985D0
+	
+}
+
+#appLoadingIndicator{
+	
+}
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<section id="page1" data-role= "page">
+	<header data-role="header">
+		<h1>Pagina 1</h1>
+	</header>
+	<div data-role="content">
+		<div class="ui-grib-b">
+		<div class="ui-block-a"> <a href="#listas-anidadas">Listas Anidadas</a></div>
+		<div class="ui-block-b"> <a href="#barra herramientas">Barra de herramientas </a></div>
+		<div class="ui-block-c"> <a href="#formularios">Formularios</a></div>
+		<div class="ui-block-a"> <a href="#listas-anidadas">Listas Anidadas</a></div>
+		<div class="ui-block-b"> <a href="#barra herramientas">Barra de herramientas </a></div>
+		<div class="ui-block-c"> <a href="#formularios">Formularios</a></div>
+			
+		</div>
+	</div>
+	<footer data-role="footer">
+		<h2>Pie de Pagina</h2>
+	</footer>
+</section>
+
+<section id="listas-anidadas" data-role="page">
+	<header data-role="header">
+		<h1>Listas anidadas</h1>
+	</header>
+	<div data-role="content">
+		<ul data-role="listview">
+			<li><a href="#">Colores<span class="ui-li-count">3</span></a>
+			<ul>
+				<li>Rojo </li>
+				<li>amarillo </li>
+				<li>azul </li>
+			</ul>
+			</li>
+			<li><a href="#">Ciudades <span class="ui-li-count">2</span></a>
+			<ul>
+				<li>Madrid</li>
+				<li>Barcelona</li>
+			</ul>
+			</li>
+		</ul>
+	</div>
+</section>
+<section id="barra-herramientas" data-role="page">
+	<header data-role="header">
+		<h1>Barra de herramientas</h1>
+		<nav data-role="navbar">
+		<ul>
+			<li><a href="barra-herramientas" class="ui-btn-active">Inicio</a></li>
+			<li><a href="#">Proyectos</a></li>
+			<li><a href="#">Acerca de</a></li>
+		</ul>
+		</nav>
+	</header>
+	<div data-role="content">
+		<p>Contenido de la sección de inicio</p>
+	</div>
+	<footer data-role="footer" data-position="fixed">
+		<h2>Pie de barra de herramientas</h2>
+	</footer>
+</section>
+<section id="formularios" data-role="page">
+	<header data-role="header">
+		<h1>Formularios</h1>
+	</header>
+	<div class="content" data-role="content">
+		<form id="form1" action="#" method="post">
+			<div data-role="fieldcontain">
+				<label for="nombre">¿Como se llama?</label>
+				<input type="text" id="nombre" name="nombre" placeholder="nombre completo"/>
+					<label for="email">email</label>
+					<input type="email" id="email" name="email"/>
+					<label for="movil">móvil</label>
+					<input type="phone" id="movil" name="movil"/>
+					<label for="numaños">Num de años trabajados</label>
+					<input type="range" id="numaños" name="numaños" min="0" max="50" />
+					<label for="viajar">Disponibilidad para viajar</label>
+					<select id="viajar" name="viajar" data-role="slider">
+						<option value="1">Sí</option>
+						<option value="0">N</option>
+					</select>
+					<fieldset data-role="controlgroup">
+						<legend>Idiomas que es capaz de leer:</legend>
+						<label for="ingles">Inglés</label>
+						<input type="checkbox" id="ingles" name="ingles"/>
+						<label for="español">Español</label>
+						<input type="checkbox" id="español" name="español"/>
+						<label for="aleman">Alemán</label>
+						<input type="checkbox" id="aleman" name="aleman"/>
+					</fieldset>
+					<label for="estadocivil">Estado civil</label>
+					<select id="estadocivil" name="estadocivil" data-native-menu="false">
+					 <option value="0">Soltero</option>
+					 <option value="1">Casado</option>
+					 <option value="2">Divorciadp</option>
+					 </select>
+
+							
+			</div>
+		</form>
+	</div>
+	<footer data-role="footer" data-position="fixed">
+		<h2>Pie de Formularios</h2>
+
+	</footer>
+</section>
+</body>
+</html>
